@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/_15sdp"
+    tools:context="com.example.khinthirisoe.nearestclinicsprovider.AboutActivity"
+    tools:showIn="@layout/activity_about">
+
+    <ImageView
+        android:id="@+id/developer_image"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_above="@+id/developer_name"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/developer_name"
+        android:src="@drawable/thiri" />
+
+    <TextView
+        android:id="@+id/developer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:gravity="center_horizontal"
+        android:text="@string/developer_name"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/developer_degree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/developer_name"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:gravity="center_horizontal"
+        android:text="@string/developer_degree"
+        android:textSize="@dimen/_11sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/developer_degree"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:orientation="horizontal">
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/btnGmail"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:background="@color/normal_green"
+            android:onClick="btnGmail"
+            app:animate="false"
+            app:iconDrawable="@drawable/ic_gmail" />
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/btnFacebook"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:background="@color/normal_green"
+            android:onClick="btnFacebook"
+            app:animate="false"
+            app:iconDrawable="@drawable/ic_facebook" />
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/btnTwitter"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:background="@color/normal_green"
+            android:onClick="btnTwitter"
+            app:animate="false"
+            app:iconDrawable="@drawable/ic_twitter" />
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/btnPhone"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:background="@color/normal_green"
+            android:onClick="btnPhone"
+            app:animate="false"
+            app:iconDrawable="@drawable/ic_phone_white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.khinthirisoe.nearestclinicsprovider.DetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/normal_green"
+        android:theme="@style/NoActionBar" />
+
+    <include layout="@layout/content_detail" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/phone"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/_15sdp"
+        android:clickable="true"
+        android:onClick="btnPhone"
+        android:src="@drawable/ic_phone_white"
+        app:backgroundTint="@color/normal_green"
+        app:borderWidth="0dp" />
+
+</android.support.design.widget.CoordinatorLayout>

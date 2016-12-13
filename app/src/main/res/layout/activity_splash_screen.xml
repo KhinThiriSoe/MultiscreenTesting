@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.khinthirisoe.nearestclinicsprovider.SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_splash_background"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:text="@string/welcome"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:id="@+id/welcome_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:gravity="center_horizontal"
+        android:text="Nearest Clinics Application မွ ၾကိဳဆိုုပါတယ္"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_14sdp" />
+
+    <TextView
+        android:id="@+id/developed_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressDeterminate"
+        android:gravity="center_horizontal"
+        android:text="@string/developed_by"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_10sdp" />
+
+    <com.gc.materialdesign.views.ProgressBarDeterminate
+        android:id="@+id/progressDeterminate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#4CAF50" />
+
+</RelativeLayout>
